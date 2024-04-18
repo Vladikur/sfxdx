@@ -1,0 +1,32 @@
+@import "../utils/container";
+
+.header {
+  position: relative;
+  z-index: 2;
+  border-bottom: 1px solid var(--border-color);
+
+  &__inner {
+    padding: 2.4rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    @include --mobile {
+      justify-content: space-between;
+    }
+  }
+
+  &__logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include --mobile {
+      position: relative;
+      top: unset;
+      left: unset;
+      transform: unset;
+    }
+  }
+}

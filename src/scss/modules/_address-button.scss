@@ -1,0 +1,14 @@
+@import "../utils/typography";
+@import "../utils/default-hover";
+
+.address-button {
+  @include default-hover;
+  @include text-button-sm;
+  color: var(--accent-color);
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  background-color: var(--text-contrast-color);
+  padding: 1rem 1.2rem;
+  border-radius: 2rem;
+}

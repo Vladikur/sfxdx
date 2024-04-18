@@ -1,0 +1,5 @@
+@use "../utils/container" as *;
+
+.container {
+  @include container;
+}

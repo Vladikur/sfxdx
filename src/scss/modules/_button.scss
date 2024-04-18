@@ -1,0 +1,19 @@
+@import "../utils/default-hover";
+@import "../utils/typography";
+@import "../utils/container";
+
+
+.button {
+  @include default-hover;
+  @include text-button;
+  padding: 1.2rem 3.2rem;
+  background: var(--accent-color);
+  color: var(--text-contrast-color);
+  border: unset;
+  border-radius: 0.8rem;
+  box-shadow: var(--button-box-shadow);
+
+  @include --mobile {
+      padding: 1rem 2rem;
+  }
+}

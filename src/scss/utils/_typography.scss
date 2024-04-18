@@ -1,0 +1,34 @@
+@import "container";
+
+@mixin text {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2rem;
+
+  @include --mobile {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+}
+
+@mixin text-button-sm {
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+
+  @include --mobile {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  }
+}
+
+@mixin text-button {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+
+  @include --mobile {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+}
