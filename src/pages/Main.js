@@ -4,7 +4,9 @@ export default function Main() {
 
     return (
         <React.Fragment>
-          <div className="container"></div>
+          <div className="container">
+            <h1>Page content</h1>
+          </div>
         </React.Fragment>
     );
 }

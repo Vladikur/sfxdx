@@ -1,0 +1,63 @@
+@import "../utils/typography";
+
+h1,
+.text-h1,
+h2,
+.text-h2,
+h3,
+.text-h3,
+h4,
+.text-h4,
+h5,
+.text-h5,
+h6,
+.text-h6 {
+}
+
+.text-h0 {
+}
+
+h1,
+.text-h1 {
+}
+
+h2,
+.text-h2 {
+  @include text-h2;
+}
+
+h3,
+.text-h3 {
+}
+
+h4,
+.text-h4 {
+}
+
+.text-button {
+  @include text-button;
+}
+
+.text-button-sm {
+  @include text-button-sm;
+}
+
+.text {
+  @include text;
+}
+
+.text-body-bold {
+}
+
+.text-body-small {
+}
+
+.text-body-small-bold {
+}
+
+.text-caption {
+}
+
+.text-contrast {
+  color: var(--text-contrast-color);
+}

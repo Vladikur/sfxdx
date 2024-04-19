@@ -2,6 +2,7 @@
 
 html {
   font-size: 62.5%;
+  --main-font: 'Manrope', 'Arial', sans-serif;
 
   @media screen and (max-width: 767px) {
     font-size: calc(10px + 13 * (100vw - 375px) / 447);
@@ -19,9 +20,7 @@ html {
 body {
   @include text;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  sans-serif;
+  font-family: var(--main-font);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--text-color);
